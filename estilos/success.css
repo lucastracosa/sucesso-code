@@ -1,0 +1,39 @@
+
+section .success h2{
+    color: black;
+}
+
+.btn-contato button{
+    background-color: blue;
+    color: white;
+}
+
+.btn-contato button:hover{
+    color: white;
+}
+
+footer{
+    margin-top: 150px;
+    box-shadow: none;
+
+}
+
+
+section .btn-contato{
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+
+}
+
+
+
+
+section .success .titulo{
+    margin-top: 170px;
+}
+
+footer .interface .line-footer .direitos{
+    margin-top: 20px;
+    
+    }

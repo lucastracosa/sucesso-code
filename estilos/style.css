@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+/* Congigurações Gerais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+   
+}
+
+:root{
+    --cor1: white;
+    --cor2: blue;
+    --cor3: #ffb300;
+    --cor4: white;
+    --cor5: black;
+    --cor6: #f2fafb  ;
+
+}
+
+body{
+    background-color:var(--cor4);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:white;
+    border: none;
+    border-radius: 30px;
+    color: rgb(8, 6, 6);
+    cursor: pointer;
+transition: .2s;}
+
+h2.titulo{
+    color:var(--cor1);
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: var(--cor3);
+    
+}
+
+/************** Estilo do cabeçario **************/
+
+header{
+    padding: 40px 4%;
+    background-color: var(--cor2);
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header a{
+    display: inline-block;
+    color: var(--cor1);
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+header nav.menu-desktop a:hover{
+    color: #000000;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav.menu-desktop ul li{
+   display: inline-block;
+   padding: 0 40px;
+}
+
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px  rgb(255, 162, 0) ;
+    color: rgb(4, 4, 4);
+    transform: scale(1.05);
+}
+
+header .interface .logo .logo1{
+    width: 200px;
+
+}
+
+/******** ESTILO MENU MOBILE ********/
+.btn-abrir-menu span{
+    color: white;
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+.menu-mobile{
+    background-color:  var(--cor4);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu-mobile.abrir-agora{
+  width: 60%;  
+}
+
+.menu-mobile.abrir-agora ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 8%;
+}
+
+.menu-mobile .btn-fechar span{
+    color: #000000;
+    font-size: 35px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color:  #002fff;
+    color: white;
+}
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.734);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.btn-abrir-menu{
+    display: none;
+        }
+
+/************** Estilo do topo do Site **************/
+
+section.topo-do-site{
+    padding: 40px 4%;
+    background-color: var(--cor2) ;
+    color: var(--cor5);
+    height: 600px;
+}
+
+section .topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap:90px;
+}
+
+.topo-do-site h1{
+    color:var(--cor1);
+
+    margin-top: 30px;
+    font-size: 42px;
+
+}
+.topo-do-site .text-topo-site h1 span{
+    color: var(--cor3)}
+
+    .topo-do-site .text-topo-site p{
+        color: var(--cor1);
+        margin: 20px 0px; 
+        margin-right: 115px;
+
+    }    
+
+    .topo-do-site .text-topo-site span{
+        color: white;
+        font-size: 30px;
+        margin: 20px 0px; 
+        margin-right: 115px;
+        color: var(--cor3);
+        padding-bottom: 30px;
+
+    }    
+
+    .topo-do-site .text-topo-site #btn-cont{
+        margin-top: 30px;
+    }
+
+.topo-do-site .img-topo-site{
+    margin-top: 30px;
+   
+
+
+
+    
+}
+.topo-do-site .img-topo-site{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/************ ESTILO DA CRIATIVIDADe ************/
+section.criatividade{
+    padding: 100px 4%;
+    
+}
+
+section.criatividade h2.titulo{
+    color: var(--cor2);
+}
+
+section.criatividade .flex{
+    gap: 30px;
+}
+
+
+
+.criatividade .criatividade-box{
+    color: var(--cor5);
+    padding:40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.criatividade .criatividade-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 255, 0.279);
+}
+
+.criatividade .criatividade-box span{
+    color: var(--cor2);
+    font-size: 70px;
+}
+
+.criatividade .criatividade-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/***************** ESTILO SOBRE ****************/
+
+section.sobre{
+    padding: 100px 4%;
+    background-color: var(--cor2);
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap:60px;
+
+}
+
+.sobre .txt-sobre{
+    color: white;
+
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+
+.sobre .txt-sobre h2 span{
+    color: var(--cor3);
+    display: block;
+
+}
+
+.sobre .txt-sobre p{
+    margin: 20px;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .enfase{
+    color: var(--cor3);
+    font-weight: 600;
+}
+
+
+
+
+.btn-social img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 8px;
+
+    
+   
+}
+
+.sobre .txt-sobre .btn-social img:hover{
+    transform: scale(1.08);
+    transition: .2s;
+
+}
+
+/*****************PORTFOLIO*****************/
+
+section.portfolio{
+    background-color: var(--cor6);
+    padding: 100px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.153);
+}
+
+section.portfolio h2.titulo{
+    color: var(--cor2);
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: black;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius:40px ;
+    position: relative;
+}
+
+
+.img-port:hover{
+    background-position: 100% 100%;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #01080596;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/******************FORMS*******************/
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+section.formulario h2.titulo{
+    color: var(--cor2);
+}
+
+form{
+   max-width: 500px;
+   margin: 0 auto;
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   gap:10px;
+   margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color:var(--cor2);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 150px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: var(--cor2);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+form .btn-enviar input:hover{
+box-shadow: 0px 0px 8px #01AB75;
+transform: scale(1.05);
+color: white;
+
+}
+
+
+/************Estilo do Rodapé**********/
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.153);
+    background-color: var(--cor2);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .logo1{width: 200px;} 
+
+footer .btn-social img:hover{
+    transform: scale(1.08);
+    transition: .2s;
+}
+
+footer .line-footer p span{
+    color: var(--cor3);
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+   border-top: 2px solid var(--cor3);
+}
+
+footer .line-footer .direitos{
+    color: var(--cor1);
+    text-align: center;
+    font-size: 15px;
+    margin-top: -55px;
+
+}
+
